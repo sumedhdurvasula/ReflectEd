@@ -1,8 +1,10 @@
+
 export const exploreWorlds = [
   {
     id: 'Study Tool-1',
     imgUrl: '/Summary.jpg',
     title: 'Summary',
+    reDirectUrl: '/about'
   },
   {
     id: 'Study Tool-2',
@@ -23,14 +25,17 @@ export const exploreWorlds = [
     id: 'Study Tool-5',
     imgUrl: '/Gameify.jpg',
     title: 'Gameify',
-    onclick: 'https://www.youtube.com/watch?v=k7zHd9jWCPk&ab_channel=RELAXATION%28LoFi%26CHILL%29'
+    reDirectUrl: '/index.html'
+   
   },
 ];
+
 
 export const startingFeatures = [
   'Choose which study tool you would like to use',
   'Utilize the tool to your full extent',
 ];
+
 
 export const socials = [
   {
@@ -50,3 +55,6 @@ export const socials = [
     url: '/facebook.svg',
   },
 ];
+
+
+

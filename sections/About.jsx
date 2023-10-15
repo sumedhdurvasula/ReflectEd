@@ -7,9 +7,6 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import FileUploadBox from './fileUpload';
 
-
-
-
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
@@ -23,7 +20,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="What is ReflectEd" textStyles="text-center" />
+      <TypingText title="What is ReflectEd" textStyles="text-center" speed={200}/>
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
