@@ -10,11 +10,15 @@ export const exploreWorlds = [
     id: 'Study Tool-2',
     imgUrl: '/Visuals.png',
     title: 'Visuals',
+    reDirectUrl: '/quiz'
+
   },
   {
     id: 'Study Tool-3',
     imgUrl: '/Quiz.jpg',
     title: 'Questions',
+    reDirectUrl: '/quiz'
+
   },
   {
     id: 'Study Tool-4',

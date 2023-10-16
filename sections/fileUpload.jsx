@@ -25,22 +25,17 @@ const FileUploadBox = () => {
 
   const startUpload = () => {
     setIsUploading(true);
-  
-    const totalDuration = 8000; // Total duration for the fake upload in milliseconds
-    const intervalDuration = 200; // Interval duration for updating progress (e.g., every 100ms)
-    const steps = totalDuration / intervalDuration;
-    let stepCount = 0;
-  
+    // Simulate upload progress
     const interval = setInterval(() => {
       setUploadProgress((prevProgress) => {
-        stepCount += 1;
-        if (stepCount >= steps) {
-          setIsUploading(false);
-          return 100; // Ensure progress reaches 100% even if steps aren't exact
+        if (prevProgress < 100) {
+          return prevProgress + 10;
         }
-        return (stepCount / steps) * 100;
+        clearInterval(interval);
+        setIsUploading(false); // Set isUploading to false when upload completes
+        return prevProgress;
       });
-    }, intervalDuration);
+    }, 200);
   };
 
   return (
@@ -74,6 +69,9 @@ const FileUploadBox = () => {
         </section>
       )}
       <section className="uploaded-area"></section>
+      <div className="flex justify-center items-center flex-col relative z-10 ">
+      <button className="analyze-button">Analyze</button>
+      </div>
     </div>
   );
 };
