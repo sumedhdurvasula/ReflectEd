@@ -4,8 +4,6 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
