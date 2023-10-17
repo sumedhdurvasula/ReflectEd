@@ -25,8 +25,7 @@ const Footer = () => (
             alt="heart"
             className="w-[24px] h-[12px] object-contain"
           />
-          <span className="font-normal text-[16px] text-white">
-          </span>
+          <span className="font-normal text-[16px] text-white"></span>
         </button>
       </div>
 
@@ -37,9 +36,7 @@ const Footer = () => (
           <h4 className="font-extrabold text-[24px] text-white">
             ReflectEd
           </h4>
-          <p className="font-normal text-[14px] text-white opacity-50">
-          
-          </p>
+          <p className="font-normal text-[14px] text-white opacity-50"></p>
 
           <div className="flex gap-4">
             {socials.map((social) => (
