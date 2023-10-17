@@ -44,11 +44,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, reDirectUr
           Go to
           </a>
         </p>
-        
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
         </h2>
-        
       </div>
     )}
   </motion.div>
